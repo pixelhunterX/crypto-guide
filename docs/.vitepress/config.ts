@@ -16,6 +16,7 @@ const chapters = fs.readdirSync(docsDir)
 export default defineConfig({
   lang: 'de',
   title: 'Crypto Guide',
+  base: '/<repo>/',          // delete this line for a custom domain
   cleanUrls: true,
   markdown: {
     container: { infoLabel: 'Info', warningLabel: 'Hinweis', dangerLabel: 'Achtung' },
